@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3d83842a79e04abbcb95\",\"layouts\":[{\"id\":0,\"position\":{\"x\":510.19867549668874,\"y\":98.54304635761589,\"z\":0,\"width\":260.6622516556291,\"height\":144.63576158940398,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Min(Asia Budget by Country.Pais)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Asia Budget by Country\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Pais\"}},\"Function\":2},\"Name\":\"Min(Asia Budget by Country.Pais)\",\"NativeReferenceName\":\"Número de Paises\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Pais\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(Asia Budget by Country.Pais)\":{\"displayName\":\"Número de Paises\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 144.64,
+          "width": 260.66,
+          "x": 510.20,
+          "y": 98.54,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6ff43657a8c1f3d1f1e5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":179.60264900662253,\"y\":309.9337748344371,\"z\":1,\"width\":967.9470198675497,\"height\":298.8079470198676,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Asia Budget by Country.Pais\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Asia Budget by Country.Valor)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Asia Budget by Country\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Pais\"},\"Name\":\"Asia Budget by Country.Pais\",\"NativeReferenceName\":\"Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Valor\"}},\"Function\":0},\"Name\":\"Sum(Asia Budget by Country.Valor)\",\"NativeReferenceName\":\"Suma de Valor\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Valor\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 298.81,
+          "width": 967.95,
+          "x": 179.60,
+          "y": 309.93,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
